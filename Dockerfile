@@ -1,7 +1,7 @@
 FROM ubuntu:24.04
 
 RUN apt update && \
-    apt install -y build-essential cmake
+    apt install -y build-essential cmake lib-magic-dev
 
 WORKDIR /app
 COPY main.cpp /app/
